@@ -34,8 +34,11 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of("http://localhost:5173")
-        );
+        List.of(
+                "http://localhost:5173",
+                "https://keystone-frontend-if1q.onrender.com"
+        )
+);
 
         configuration.setAllowedMethods(
                 List.of(
